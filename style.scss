@@ -1,0 +1,531 @@
+@font-face {
+  font-family: 'Raleway'; src: url('fonts/Raleway-Light.ttf');
+}
+@font-face {
+  font-family: 'Penna'; src: url('fonts/penna.otf');
+}
+@font-face {
+  font-family: 'Roboto'; src: url('fonts/Roboto-Light.ttf');
+}
+@font-face {
+  font-family: 'Tamoro'; src: url('fonts/Tamoro.ttf');
+}
+@font-face {
+  font-family: 'Death'; src: url('movieSearcher/fonts/death.ttf');
+}
+
+html{
+  //background: #fff url("images/marblelighter.png");
+
+  background: url(images/marblebigger.png) no-repeat center center fixed; // orm? leaf?
+  background-size: cover;
+
+  //background-size: cover;
+}
+// ----------- HEADER & NAV -------------
+
+h1{
+  font-family: Penna, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 6em;
+  color: white;
+  text-shadow:
+  -1px -1px 0 #BD0048,
+  1px -1px 0 #BD0048,
+  -1px 1px 0 #BD0048,
+  1px 1px 0 #BD0048;
+  margin-bottom: 50px;
+  @media (max-width: 620px) {
+    font-size: 5em;
+  }
+  @media (max-width: 509px) {
+    font-size: 4em;
+    margin-bottom: 20px;
+  }
+}
+h2{
+  font-family: Penna, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4em;
+  color: white;
+  margin-top: 0px;
+  padding-bottom: 10px;
+  #lastWords{
+    color: #BD0048; // teal / crimson #d99817;
+    margin-bottom: 20px;
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  }
+  @media (max-width: 620px) {
+    font-size: 3em;
+  }
+  @media (max-width: 509px) {
+    font-size: 2em;
+  }
+}
+header{
+  margin: 50px 20px 20px 20px;
+  background: rgba(0,0,0,0.4);
+  //background-image: url('images/bord.png');
+  //background-repeat: no-repeat;
+  //background-size: 80%;
+  //opacity: 0.7;
+}
+nav{
+  margin-bottom: 110px;
+  margin-top: 20px;
+  margin-left: 100px;
+  @media (max-width: 500px) {
+    display: none;
+  }
+}
+.row{
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  //margin-left: 20px;
+  .navText{
+    a{
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    font-family: Raleway, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid black;
+    outline: 1px solid white;
+    width: 160px;
+    padding: 7px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.4);
+    &:hover{
+      a{
+        font-weight: bold;
+      }
+      background: rgba(0,0,0,0.7);
+      border: 2px solid black;
+    }
+    @media (max-width: 990px) {
+      width: 90px;
+    }
+    @media (max-width: 678px) {
+      width: 50px;
+      font-size: 0.6em;
+    }
+  }
+}
+
+// ------------ MAIN ---------------
+
+main{
+  margin-top: 200px;
+  @media (max-width: 500px) {
+    margin-top: 50px;
+  }
+}
+.portfoliobackground{
+  // rama in portfolio?
+}
+
+h3{
+  font-family: Penna, sans-serif;
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  color:  #348781;
+  border-bottom: 1px solid #348781;
+  width: 210px;
+  margin: 0 auto;
+}
+.portfolio{
+  margin: 50px 20px 20px 20px;
+  background: rgba(0,0,0,0.4);
+  img{
+    width: 470px;
+    margin-top: 15px;
+    @media (max-width: 1050px) {
+      margin-top: 10%;
+     // margin-bottom: 30%;
+    }
+    @media (max-width: 500px) {
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+  }
+  .portfolioText{
+    font-family: Raleway, sans-serif;
+    font-size: 1em;
+    color: white;
+    text-align: justify;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    @media (max-width: 500px) {
+      text-align: center;
+    }
+    @media (max-width: 1050px) {
+      .sixcol{
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      color: white;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+  }
+  h4{
+    font-family: Penna, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-transform: uppercase;
+  }
+  .visitSite{
+      a{
+        color: teal;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      font-family: Raleway, sans-serif;
+      font-size: 1em;
+      text-transform: uppercase;
+      text-align: center;
+      border: 2px solid black;
+      outline: 1px solid white;
+      width: 160px;
+      padding: 7px;
+      margin: 0 auto;
+      background: rgba(0,0,0,0.4);
+      &:hover{
+        a{
+          font-weight: bold;
+          color: teal;
+        }
+        //background: rgba(255, 255, 255, 1);
+        border: 2px solid black;
+      }
+  }
+}
+
+// ---------------- SKILLS --------------
+.skills{
+  margin: 50px 20px 20px 20px;
+  background: rgba(0,0,0,0.4);
+  //border: 1px solid white;
+}
+.effect1{
+  display: none;
+  width: 100%;
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
+  color: white;
+}
+.effect2{
+  display: none;
+  width: 1150px;
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
+  color: white;
+  padding: 20px;
+}
+.toggle{
+  margin-bottom: 0;
+  margin-top: 0;
+  text-align: center;
+}
+h5{
+  font-family: "Death", sans-serif;
+  font-size: 5.5em;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 10px;
+  margin: 0 auto;
+  @media (max-width: 500px) {
+    font-size: 4em;
+  }
+}
+#h5{
+  text-align: center;
+}
+.skillspicture{
+  width: 30%;
+  text-align: center;
+}
+
+// ----------------- OM MIG ------------------
+// --- KLIPP ---
+.clip-svg {
+  width: 0;
+  height: 0;
+}
+
+.polygon-each {
+  padding: 10px;
+  text-align: center;
+}
+
+.polygon-each-img-wrap img {
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 800px) {
+  .polygon-each {
+    display: inline-block;
+    width: 57%;
+    vertical-align: top;
+  }
+
+  .polygon-each img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.polygon-clip-rhombus {
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  -webkit-clip-path: url("#polygon-clip-rhombus");
+  clip-path: url("#polygon-clip-rhombus");
+}
+// ---- slut klipp -----
+
+.me{
+  margin: 68px 20px 20px 20px;
+  background: rgba(0,0,0,0.3);
+  //border-top: 1px solid white;
+  .aboutText{
+    font-family: Raleway, sans-serif;
+    font-size: 1em;
+    color: white;
+    margin: 10px 10px;
+    line-height: 1.5;
+    a{
+      text-decoration: none;
+    }
+    .aboutTextFirst{
+      text-decoration: underline;
+    }
+    .vetamer{
+      color: white;
+      margin-top: 20px;
+      line-height: 1.5;
+      text-align: justify;
+      text-shadow:
+      -0.5px -0.5px 0 crimson,
+      0.5px -0.5px 0 crimson,
+      -0.5px 0.5px 0 crimson,
+      0.5px 0.5px 0 crimson;
+    }
+    #mer{
+      //width: 1150px;
+    }
+  }
+
+}
+.moreAboutMe{
+  //display: none;
+  //width: 900px;
+  text-align: justify;
+  margin-left: 10px;
+  font-family: Raleway, sans-serif;
+  font-size: 1em;
+  color: white;
+  margin: 10px 10px;
+  line-height: 1.5;
+  @media (max-width: 500px) {
+    text-align: center;
+  }
+}
+#fact{
+  text-align: center;
+}
+.cv{
+    a{
+      color: teal;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    font-family: Raleway, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    border: 2px solid black;
+    outline: 1px solid white;
+    width: 160px;
+    padding: 7px;
+    margin-top: 70px;
+    background: rgba(0,0,0,0.4);
+    &:hover{
+      a{
+        font-weight: bold;
+        color: teal;
+      }
+      //background: rgba(255, 255, 255, 1);
+      border: 2px solid black;
+    }
+
+}
+.effect1{
+  text-align: justify;
+}
+// ------- footer ---------
+.footer{
+  //position: absolute;
+  //width: 95%;
+  margin: 50px 20px 20px 20px;
+  background: rgba(0,0,0,0.4);
+  padding-bottom: 20px;
+  .footerText{
+    font-family: Raleway, sans-serif;
+    font-size: 1em;
+    color: white;
+    margin-bottom: 20px;
+  }
+  img{
+    width: 70px;
+    margin-top: 15px;
+  }
+}
+.rubriker{
+  font-family: Penna, sans-serif;
+  font-size: 3em;
+  color: crimson;
+  text-shadow:
+  -0.5px -0.5px 0 #fff,
+  0.5px -0.5px 0 #fff,
+  -0.5px 0.5px 0 #fff,
+  0.5px 0.5px 0 #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+//övrigt
+
+#fact{
+  .aboutTextFirst{
+    text-decoration: underline;
+  }
+}
+
+// ------------ SKILLS CSS --------------
+
+.skillsAnimation {
+  font-family: 'Ubuntu', sans-serif;
+  width:960px;
+  @media (max-width: 1060px) {
+    width: 800px;
+  }
+  @media (max-width: 900px) {
+    width: 700px;
+  }
+  @media (max-width: 800px) {
+    width: 600px;
+  }
+  @media (max-width: 700px) {
+    width: 500px;
+  }
+  @media (max-width: 600px) {
+    width: 400px;
+  }
+  @media (max-width: 500px) {
+    width: 300px;
+  }
+  @media (max-width: 460px) {
+    width: 200px;
+  }
+  @media (max-width: 400px) {
+    width: 100px;
+  }
+}
+
+p{
+  color:#525252;
+  font-size:12px;
+}
+
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background:#eee;
+  height:35px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+  width:110px;
+  font-weight:bold;
+  font-size:13px;
+  color:#ffffff;
+  background:#6adcfa;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.1);
+  padding:0 20px;
+  height:35px;
+  line-height:35px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height:35px;
+  width:0px;
+  background:#6adcfa;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:35px;
+  line-height:35px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.4);
+}

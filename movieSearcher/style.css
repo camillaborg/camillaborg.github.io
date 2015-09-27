@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'CanterBold3D'; src: url('fonts/CanterBold3D.otf');
+}
+@font-face {
+    font-family: 'Canter'; src: url('fonts/CanterLight.otf');
+}
+@font-face {
+    font-family: 'QuicksandLight'; src: url('fonts/QuicksandLight.otf');
+}
+@font-face {
+    font-family: 'Raleway'; src: url('fonts/Raleway-Light.ttf');
+}
+@font-face {
+    font-family: 'Death'; src: url('fonts/death.ttf');
+}
+
+
+html{
+    background-color: black;
+    margin: 50px 50px;
+    font-family: Quicksand, sans-serif;
+    font-size: 80px;
+    color: crimson;
+    text-align: center;
+}
+h1{
+   font-family: "Death", Verdana;
+    font-size: 80px;
+    padding-bottom: 0px;
+
+}
+h2{
+    font-family: "Canter", QuicksandLight, Verdana;
+    font-size: 40px;
+    color: floralwhite;
+    text-align: center;
+    font-style: italic;
+}
+
+p {
+    font-family: "Raleway", Verdana;
+    font-size: 20px;
+    color: floralwhite;
+    text-align: center;
+}
+
+
+ul{
+    list-style-type: none;
+    /*background-color: rgba(101, 101, 101, 0.70); */
+    margin-top: 30px;
+}
+
+li{
+   color: #ffcdc8;
+    text-align: left;
+    line-height: 1.5;
+    font-family: "Raleway", Verdana;
+    font-size: 17px;
+    /*text-align: center;*/
+
+
+}
+img{
+    width: 30%;
+    /*border-radius:20%;*/
+    border: 10px double #3c3c3c;
+    padding: 3px 3px;
+    margin: 20px 20px;
+
+
+
+}
+button{
+    background-color: white;
+    color: #000000;
+    font-size: 20px;
+    border-radius: 5%;
+    font-family: "Raleway", Verdana;
+    border: 3px outset darkred;
+}
+button:hover{
+    font-weight: bold;
+
+}
+input{
+    background-color: white;
+    font-size: 20px;
+    font-family: "Raleway", Verdana;
+    font-weight: bold;
+    border-radius: 5%;
+    border: 4px ridge darkred;
+    height: 30px;
+    appearance: none;
+
+}
+input:focus{
+    outline: none;
+    background-color: whitesmoke;
+}
+button:focus{
+    outline: none;
+}
+.nyckelord{
+    font-weight: bold;
+
+}
+/* MOBIL */
+@media (max-width: 320px) {
+    h2{
+        visibility: hidden;
+    }
+    p{
+        font-size: 70px;
+    }
+}

@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'York';
+  src: url("fonts/yorkwhiteletter.ttf"); }
+@font-face {
+  font-family: 'Death';
+  src: url("fonts/deathrattlebb_reg.ttf"); }
+body {
+  background-image: url(img/wallpaper4.png); }
+
+h1 {
+  font-size: 150px;
+  font-family: "Death", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  color: WHITE; }
+
+h2 {
+  font-size: 50px;
+  font-family: "York", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  margin: 0px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  background-color: #b56161;
+  border: 2px solid darkred;
+  border-bottom: 4px solid darkred; }
+
+.original-hardcore {
+  font-size: 44px; }
+
+.black {
+  font-size: 38px; }
+
+.newwave {
+  font-size: 43px; }
+
+.logo1, .logo2, .logo3, .logo4, .logo5, .logo6, .logo7, .logo8, .logo9, .logo10 {
+  background-image: url("img/vagor50.png");
+  background-size: cover;
+  background-color: white;
+  border: 5px solid red;
+  box-shadow: 1px 5px 20px 3px #656565; }
+
+img {
+  width: 200px;
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+  padding-bottom: 5px;
+  padding-right: 12px;
+  padding-left: 12px; }
+
+.logo1, .logo2, .logo3, .logo4, .logo5, .logo10 {
+  width: 300px;
+  margin: 0 auto;
+  border: 1px solid black; }
+
+.logo6, .logo7, .logo8, .logo9 {
+  width: 370px;
+  border: 1px solid black; }
+
+.logo10 {
+  margin-bottom: 50px;
+  border: 2px solid red; }
+
+/*   LINES   */
+.line1 {
+  height: 100px;
+  display: block;
+  margin: 0 auto; }
+
+.line2 {
+  display: block;
+  margin: 0 auto; }
+
+.line-spec {
+  margin-left: 120px;
+  height: 140px; }
+
+.blixt {
+  margin-bottom: 200px;
+  width: 50px; }
+
+.caption {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-family: "Death"; }
+
+.header {
+  margin-bottom: 230px; }
+
+/*# sourceMappingURL=style.css.map */
