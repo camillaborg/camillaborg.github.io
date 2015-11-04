@@ -14,7 +14,7 @@
   font-family: 'Death';
   src: url("movieSearcher/fonts/death.ttf"); }
 html {
-  background: url(images/marblebigger.png) no-repeat center center fixed;
+  background: url(images/forest.jpeg) no-repeat center center fixed;
   background-size: cover; }
 
 h1 {
@@ -23,7 +23,7 @@ h1 {
   text-align: center;
   font-size: 6em;
   color: white;
-  text-shadow: -1px -1px 0 #BD0048, 1px -1px 0 #BD0048, -1px 1px 0 #BD0048, 1px 1px 0 #BD0048;
+  text-shadow: -1px -1px 0 #348781, 1px -1px 0 #348781, -1px 1px 0 #348781, 1px 1px 0 #348781;
   margin-bottom: 50px; }
   @media (max-width: 620px) {
     h1 {
@@ -42,7 +42,7 @@ h2 {
   margin-top: 0px;
   padding-bottom: 10px; }
   h2 #lastWords {
-    color: #BD0048;
+    color: #348781;
     margin-bottom: 20px;
     text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff; }
   @media (max-width: 620px) {
@@ -74,7 +74,6 @@ nav {
     text-transform: uppercase;
     text-align: center;
     border: 2px solid black;
-    outline: 1px solid white;
     width: 160px;
     padding: 7px;
     margin: 0 auto;
