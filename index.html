@@ -1,198 +1,282 @@
 <!DOCTYPE html>
 <html>
-<head>
-        <title>Camilla Borgs Portfolio</title>
-             <meta charset="utf-8">
-             <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="ISO-8859-1">
-             <link rel="stylesheet" href="style.css">
-            <link rel="stylesheet" href="skeleton.css">
-            <link rel="shortcut icon" href="images/jagikon.png" type="image/x-icon" />
-            <link rel="stylesheet" href="wow/animate.css" media="screen" title="no title" charset="utf-8">
-            <link href="wow/hover-min.css" rel="stylesheet" media="all">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Camilla Borg Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="shortcut icon" href="images/jagikon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="wow/animate.css">
+
 </head>
 <body>
-
+<header>
     <nav>
-        <div class="container">
-        <div class="row" id="navigation">
-            <div class="three columns" id="firstCol">
-                <p class="navText hvr-float-shadow"><a href="#anchor1">Portfolio</a></p>
-            </div>
-            <div class="three columns">
-                <p class="navText hvr-float-shadow"><a href="#anchor2">Skills</a></p>
-            </div>
-            <div class="three columns">
-                <p class="navText hvr-float-shadow"><a href="#anchor3">Om mig</a></p>
-            </div>
-            <div class="three columns">
-                <p class="navText hvr-float-shadow"><a href="#anchor4">Kontakt</a></p>
-            </div>
+        <img src="images/menu_button.png" id="show-menu">
+        <div class="menu">
+            <ul>
+                <li>Om mig</li>
+                <li>Projekt</li>
+                <li>Kontakt</li>
+            </ul>
         </div>
-        </div>
-
     </nav>
-    <header>
-    <h1>Camilla Borg</h1>
-    <h2><span id="lastWords">{Front End Developer}</span></h2>
+    <h1 class="wow flipInX">Camilla Borg</h1>
+    <h2 class="wow flipInX">{FrontEnd Developer}</h2>
 </header>
 
-
-<div>
-    <div class="portfoliobackground">
-    <div class="portfolio" id="anchor1">
-
-        <div class="container">
-        <div class="row">
-            <div class="six columns">
-                <a href="movieQuiz/index.html" target="_blank"><img src="images/portfolioQuiz.png" alt="Picture of project 'QuizMeQuick'"></a>
-            </div>
-            <div class="six columns">
-                <h4>Spel | Quiz Me Quick</h4>
-                    <p class="portfolioText">Jag har tillsammans med Emma Berglund utvecklat ett spel under vår kurs i JavaScrpit 2. Målet var att skapa ett spel av valfri genre som går att spela i webbläsaren. Vi valde att skapa en film-frågesport som vi nu kallar 'Quiz Me Quick'! Under en spelomgång får man välja genre för att sedan gissa ifrån vilken film klippet som visas kommer ifrån. Man har tio sekunder/klipp och varje omgång är totalt 5 klipp. <br><br> Vi byggde i princip hela spelet i JavaScript och skapade en JSON-fil där vi hämtade all data ifrån. Vi stylade spelet genom favoriten SASS. <br>Framtida planer: Fler genres, fler klipp och även försöka få till någon slags nedräkning av tid under spelet. Och självklart göra det responsivt!...
-                <p class="visitSite hvr-grow-rotate"><a href="movieQuiz/index.html" target="_blank">Besök sidan</a></p>
-                </p>
-            </div>
+<main>
+    <div class="introduction">
+        <div class="intropart">
+            <img src="../images/profilbild-grey-lighter.png" alt="Profilbild">
         </div>
+        <div class="intropart">
+        <p>Välkommmen till mitt portfolio.<br> Jag heter Camilla Borg och är snart färdigutbildad FrontEnd Utvecklare på Nackademin. Gillar att arbeta med presentationslagret av webbplatser då det kräver både kreativitet i design och tänk! Mitt mål när jag utvecklar är alltid spännande design, härlig funktionalitet, interaktion och responsivitet för alla olika enheter.</p>
         </div>
-
+    </div>
+    <!--<img src="images/tag.png" class="tag">-->
+    <nav class="submenu">
+        <ul>
+            <li><img src="images/skills.png" class="skills-click wow rotateIn" data-wow-delay="0.5s"></li>
+            <li><img src="images/work-red.png" class="work-click wow rotateIn" data-wow-delay="0.5s"></li>
+            <li><img src="images/me-red.png" class="me-click wow rotateIn" data-wow-delay="0.5s"></li>
+        </ul>
+    </nav>
+    <div class="skills">
+        <!--<h5>Skills</h5>-->
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>SASS</li>
+            <li>Responsive Design</li>
+            <li>jQuery</li>
+            <li>Javascript</li>
+            <li>Wordpress</li>
+            <li>Gulp</li>
+            <li>Git</li>
+            <li>Flexbox</li>
+            <li>Stylus</li>
+            <li>MySQL</li>
+            <li>PHP</li>
+            <li>Photoshop</li>
+            <li>React</li>
+        </ul>
     </div>
 
+    <div class="work">
+        <div class="work-place">
+            <ul>
+                <li>Monterosa <img src="images/computer.png"></li>
+                <li>Praktikant Frontend Utvecklare</li>
+                <li>Stockholm, Sverige</li>
+                <li>September 2015 - December 2015</li>
+            </ul>
+            <p> Var med i ett projekt som byggdes i React. Detta har gett mig en djupare kunskap inom Javascript och förståelse för att bygga dynamiska webbsidor och i komponenter för att sedan kunna använda på ett bra sätt. <br>Mina kunskaper inom HTML och CSS har självklart ökat och fick prova att skriva stylingen i Stylus. I alla projekt har vi arbetat med Git och Gulp. Efter min praktik på Monterosa har jag fått en bra insikt hur det är att arbeta som utvecklare och fått en viss insikt i hur de arbetar med projekten, i tillexempel olika ramverk och rutiner.
+            </p>
+        </div>
+        <div class="work-place">
+            <ul>
+                <li>Åhléns <img src="images/dress.png"></li>
+                <li>Säljare</li>
+                <li>Stockholm, Sverige</li>
+                <li>2010 - Nuvarande timanställning</li>
+            </ul>
+            <p>Jag har varit anställd på Åhléns 6 år. Arbetade 3 år på Åhléns Täby Centrum som säljare på avdelning Hem/Media med ansvar för glas/porslin. Började sedan arbeta för Åhléns Sundbyberg som säljare med ansvar för avdelning Leksaker. <br>Huvudsakliga arbetsuppgifter har varit kassa, varuexponering enligt koncept och stor fokus vid kundkontakt och sälj. Gick en kort intern säljutbildning. Arbetade extra på helger på Åhléns i Täby Centrum samtidigt som jag studerade.</p>
+        </div>
+        <div class="work-place">
+            <ul>
+                <li>Riddarbageriet & Rivalbageriet <img src="images/cake.png"></li>
+                <li>Barista & Butikssäljare</li>
+                <li>Stockholm, Sverige</li>
+                <li>2010 - 2011</li>
+            </ul>
+            <p>Arbetade för Riddarbageriet på Östermalm, Stockholm och Rivalbageriet vid Mariatorget, Stockholm. Där hade jag arbetsuppgifter från beställning av varor och försäljning till kassahantering. Då det var stressigt och fartfyllt arbete krävdes stor organisationsförmåga.</p>
+        </div>
+        <div class="work-place">
+            <ul>
+                <li>Lax-á Sportfiske <img src="images/fish.png"></li>
+                <li>Hotellpersonal</li>
+                <li>Hella &  Hvolsvollur, Island</li>
+                <li>Säsongsarbete sommaren 2008 & 2009</li>
+            </ul>
+            <p>Efter studentexamen arbetade jag för ett företag som heter Lax-á på Island. Där arbetade jag i ett team med mycket varierade arbetsuppgifter. Genom detta arbete lärde jag mig mycket om service, arbeta i team och lösa många situationer på egen hand som uppstod i arbetet. Då det var en daglig vana att prata engelska är detta inget hinder.</p>
+        </div>
+    </div>
+
+    <div class="about-me">
+        <div class="section caption">
+            <p><span>Ahaaa!</span> Du vill veta mer om mig, kul!<br>
+                Jag heter som sagt Camilla, är 26 år och bor strax utanför Stockholm.
+                När jag inte hänger vid datorn och kodar spenderar jag mycket tid och pengar på konserter och festivaler. Jag nördar gärna ner mig i allt som har med hårdrock att göra.
+                Annars gillar jag att sjunga, laga mat, spela sällskapsspel och umgås med vänner och familj.<br><br>
+                Jag är inte den tjejen som kodat sen jag var 5 år. Jag är inte heller någon gamer. Jag halkade in i programmeringsvärlden av ren nyfikenhet.
+                Jag blev intresserad när jag läste om att Frontend handlar om att arbeta med presentationslagret av webbplatser. Att få webbplatser att vara användarvänliga men även vara spännande genom bra funktionalitet och snygg design lockade mig till att läsa till webbutvecklare. </p>
+        </div>
+        <div class="section sidebar">
+            <ul>
+                <li>Har körkort.</li>
+                <li>Mitt favoritprogram är På Spåret.</li>
+                <li>Lyssnar helst på Black Sabbath, Hardcore Superstar, Foo Fighters, The Hellacopters, Motörhead bland annat.</li>
+                <li>Favoritfilmer: Almost Famous & Lords Of Dogtown.</li>
+                <li>Skrattar åt brittiska humorserier.</li>
+                <li>Älskar blommor. Favoriterna är ranunkel, alstroemeria, pion, tulpan och fresia. </li>
+            </ul>
+        </div>
+        <div class="photos">
+            <img src="images/camilla.png" alt="Camilla">
+            <img src="images/vastkusten.png" alt="Västkusten">
+            <img src="images/konsert.png" alt="Konsert">
+            <img src="images/vanner.png" alt="Vänner">
+            <img src="images/codeinthedark.png" alt="Code in the dark">
+            <img src="images/blommor.png" alt="Blommor">
+        </div>
+    </div>
+
+
+    <div class="portfolio" id="first">
+        <div class="item project-1">
+            <h3>Amado Agency</h3>
+            <div class="block-over 1">
+                <span class="close">&#x2613</span>
+                <p>Utvecklat ett tema för Amado Agency i Wordpress.<br>Ville lära mig något nytt och pga detta har jag använt mig av ACF (Advanced Custom Fields) vilket var roligt och lätt att arbeta med. Även använt lite Flexbox för layout och positionering på sidan.
+                <ul>
+                    <li>Wordpress</li>
+                    <li>ACF</li>
+                    <li>jQuery</li>
+                    <li>Flexbox</li>
+                    <li>HTML & SASS</li>
+                    <li>Gulp</li>
+                </ul>
+                </p>
+            </div>
+            <div class="buttons">
+                <h4>Läs mer</h4>
+                <h4><a href="http://www.amadoagency.se" target="_blank">Besök</a></h4>
+            </div>
+        </div>
+        <div class="item project-6">
+            <h3>Wordpress tema - Arkitektur</h3>
+            <div class="block-over 6">
+                <span class="close">&#x2613</span>
+                <p>Utvecklat ett wordpress tema från grunden som exmamensarbete för min utbildning tillsammans med Emma Berglund. Eftersom Wordpress används som CMS på många webbplatser anser vi att det är en viktig kunskap att ha som Front End Utvecklare.<ul>
+                <li>Wordpress</li>
+                <li>MAMP</li>
+                <li>jQuery</li>
+                <li>HTML & SASS</li>
+                <li>Git/SourceTree</li>
+            </ul>
+                <p>
+            </div>
+            <div class="buttons">
+                <h4>Läs mer</h4>
+                <h4><a href="http://architect.berglundscykel.se" target="_blank">Besök</a></h4>
+            </div>
+        </div>
+    </div>
     <div class="portfolio">
-        <div class="container">
-        <div class="row">
-            <div class="six columns">
-                <h4>Infographic | Swedish Metal Evolution</h4>
-                <p class="portfolioText"> Jag har skapat en Infographic som ska visa hur musikgenren 'Svensk Metal' vuxit fram från hårdrockens början. Syftet är redovisa information på ett fängslande sätt och i ett format som tillåter struktur, presentation och interaktion.<br><br> Under projektet undersöktes många olika 'ramverk' för animationer. Jag har använt mig av 'scrollReveal.js'  och lite jQuery. Informationen träder fram på sidan under tiden man scrollar nedåt. Använt mig av Skeletons gridsystem, så ska även fungera bra på tablet och mobil.
-                <p class="visitSite wow shake" data-wow-delay="3s"><a href="svenska/index.html" target="_blank">Besök sidan</a></p>
+        <div class="item project-3">
+            <h3>MovieSearcher - API från OMDB</h3>
+            <div class="block-over 3">
+                <span class="close">&#x2613</span>
+                <p>Projekt som gjordes under kurs i JavaScript. Skapade en applikation där användaren ska kunna skriva in en film och få reda på mer information om filmen.<br><br> Använde mig av AJAX genom ett API from OMBD (Open Movie Database). Prova själv, men just nu fungerar ej att söka på svenska filmer.
+                <ul>
+                    <li>Javascript</li>
+                    <li>AJAX</li>
+                    <li>HTML & CSS</li>
+                </ul>
                 </p>
             </div>
-            <div class="six columns">
-                <a href="svenska/index.html" target="_blank"><img src="images/portfolioMetal.png" alt="Picture of project 'Swedish Metal Evolution'"></a>
+            <div class="buttons">
+                <h4>Läs mer</h4>
+                <h4><a href="projects/movieSearcher/index.html" target="_blank">Besök</a></h4>
             </div>
         </div>
+        <div class="item project-4">
+            <h3>Spel - Friend Or Fraud</h3>
+            <div class="block-over 4">
+                <span class="close">&#x2613</span>
+                <p>Friend Or Fraud är ett sällskapsspel som jag skapade tillsammans med Mikaela Grundin och Emma Berglund. Man kopplar upp sig med sina mobiler och får sedan tävla om vem som kan mest om varandra.
+                <ul>
+                    <li>Angular</li>
+                    <li>Firebase</li>
+                    <li>Javascript</li>
+                    <li>HTML & SASS</li>
+                    <li>Git/SourceTree</li>
+                    <li>Gulp</li>
+                </ul></p>
+            </div>
+            <div class="buttons">
+                <h4>Läs mer</h4>
+                <h4><a href="http://fof.mikaelagrundin.com/" target="_blank">Besök</a></h4>
+            </div>
         </div>
-
     </div>
-
     <div class="portfolio">
-        <div class="container">
-        <div class="row">
-            <div class="six columns">
-                <a href="movieSearcher/index.html" target="_blank"><img src="images/portfolioSearch.png" alt="Picture of project 'Movie Searcher'"></a>
+        <div class="item project-5">
+            <h3>Spel - Quiz Me Quick</h3>
+            <div class="block-over 5">
+                <span class="close">&#x2613</span>
+                <p>Jag har tillsammans med Emma Berglund utvecklat Quiz Me Quick! Ett spel som går att spela i webbläsaren. Ifrån vilket film kommer klippet? Man har tio sekunder/klipp och varje omgång är totalt 5 klipp. <br><br> Vi byggde i princip hela spelet i JavaScript och skapade en JSON-fil där vi hämtade all data ifrån. Vi stylade spelet genom favoriten SASS. Framtida planer: Fler genres, fler klipp och även försöka få till någon slags nedräkning av tid under spelet. Och självklart göra det responsivt!...
+                <ul>
+                    <li>Javascript</li>
+                    <li>JSON</li>
+                    <li>AJAX</li>
+                    <li>HTML & SASS</li>
+                </ul></p>
             </div>
-            <div class="six columns">
-                <h4>MovieSearcher</h4>
-                <p class="portfolioText">Projekt som gjordes under kursen JavaScript 1. Skapade en applikation där användaren ska kunna skriva in en film och få reda på mer information om filmen. Använde mig av AJAX genom ett API from OMBD (Open Movie Database).
-                <p class="visitSite hvr-grow-rotate"><a href="movieSearcher/index.html" target="_blank">Besök sidan</a></p>
+            <div class="buttons">
+                <h4>Läs mer</h4>
+                <h4><a href="projects/movieQuiz/index.html" target="_blank">Besök</a></h4>
+            </div>
+        </div>
+        <div class="item project-2">
+            <h3>Infographic - Swedish Metal Evolution</h3>
+            <div class="block-over 2">
+                <span class="close">&#x2613</span>
+                <p>Jag har skapat en Infographic som ska visa hur musikgenren 'Svensk Metal' vuxit fram från hårdrockens början. Syftet är redovisa information på ett fängslande sätt och i ett format som tillåter struktur, presentation och interaktion.<br><br> Under projektet undersöktes många olika 'ramverk' för animationer. Jag har använt mig av 'scrollReveal.js'  och lite jQuery. Informationen träder fram på sidan under tiden man scrollar nedåt. Använt mig av Skeletons gridsystem, så ska även fungera bra på tablet och mobil.
+                <ul>
+                    <li>scrollReveal.js</li>
+                    <li>jQuery</li>
+                    <li>HTML & SASS</li>
+                    <li>Skeleton</li>
+                    <li>Photoshop</li>
+                </ul>
                 </p>
             </div>
-        </div>
-        </div>
-
-
-    </div>
-    </div>
-
-    <!-- Om mig-->
-<div class="me" id="anchor3">
-    <div class="container">
-        <div class="container">
-     <div class="row">
-            <div class="three columns">
-                <p class="aboutText">Jag heter Camilla Borg och har precis kastat mig in i programmeringsvärlden och studerar just nu till FrontEnd Utvecklare på Nackademin.<br><br> Jag halkade in på utbildningen av ren nyfikenhet och älskar nu att arbeta med presentationslagret av webbplatser då det kräver både kreativitet i design och tänk!<br><br>🙋<a href="#mer"><span class="vetamer toggle">Jag vill veta mer om henne!<br><img src="images/arrow2.png" id="arrow" width="15px"></span></a>
-            </div> <!-- slut första three -->
-
-            <div class="six columns">
-                <div class="polygon-each">
-                    <div class="polygon-each-img-wrap">
-                        <img src="images/jagsvartmindre.jpg" alt="demo-clip-rhombus" class="polygon-clip-rhombus">
-                    </div>
-
-                    <svg class="clip-svg">
-                        <defs>
-                            <clipPath id="polygon-clip-rhombus" clipPathUnits="objectBoundingBox">
-                                <polygon points="0.5 0, 1 0.5, 0.5 1, 0 0.5" />
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
+            <div class="buttons">
+                <h4>Läs mer</h4>
+                <h4><a href="projects/svenska/index.html" target="_blank">Besök</a></h4>
             </div>
-
-            <div class="three columns">
-                <p class="aboutText"><span class="aboutTextFirst">Född</span> 1989</p>
-                <p class="aboutText"><span class="aboutTextFirst">Bor:</span> Täby, Stockholm</p>
-                <p class="aboutText"><span class="aboutTextFirst">Läser:</span> Studerar till FrontEnd Utvecklare på Nackademin</p>
-                <p class="aboutText"><span class="aboutTextFirst">Skills:</span> HTML, CSS, SASS, JavaScript, jQuery. Även lite PHP, MySQL, Photoshop.</p>
-                <p class="cv hvr-grow-rotate"><a href="CV.pdf" download>Ladda ner mitt CV</a></p>
-            </div> <!--slut three sista -->
-        </div><!-- slut row -->
-       </div>
- <div class="container">
-    <div class="row">
-        <div class="effect1" id="mer">
-            <div class="eight columns">
-                <p class="moreAboutMe">
-                AHAA! Du vill veta mer!<br>
-                Jag heter som sagt Camilla Borg och är 26 år. Jag bor i Täby utanför Stockholm. Jag har i mitt                               liv hittills jobbat med en del olika yrken, b.la som säljare på Åhléns, barista/butikspersonal                                  på Riddarbageriet & Rivalbageriet. Jag har även säsongsarbetat två år för ett                                           flugfiskeföretag/hotell på Island.<br><br>
-                Jag halkade in på denna utbildning av ren nyfikenhet. Jag har sedan tidigare ingen större erfarenhet av programmering eller liknande förutom väldigt små kunskaper inom HTML. Jag blev intresserad när jag läste om att FrontEnd handlar om att arbeta med presentationslagret av webbplatser. Att få webbplatser att vara användarvänliga men även vara spännande genom bra funktionalitet och snygg design lockade mig till att läsa till webbutvecklare. <br><br>
-                När jag inte hänger vid datorn och kodar spenderar jag mycket tid och pengar på konserter och festivaler. Jag nördar gärna ner mig i allt som har med hårdrock att göra.<br>Annars gillar jag att sjunga, spela sällskapsspel eller hänga med vännerna på uteserveringar.</p>
         </div>
-        <div class="four columns" id="fact" style="text-align: center; line-height: 2; padding: 5px;">
-            &#x26A1<br> Fem Favoriter <br><span class="aboutTextFirst">Favorit Program</span>: På Spåret 👵
-            <br><span class="aboutTextFirst">Favorit Band</span>: In Flames, Black Sabbath, HCSS, Foo Fighters,The Hellacopters bland annat. <br><span class="aboutTextFirst">Favorit Resa</span>: Safari i Sydafrika <br><span class="aboutTextFirst">Favorit Serie</span>: Band Of Brothers<br> & How To Make It In America<br><span class="aboutTextFirst">Favorit Film</span>: Almost Famous<br> &#x26A1
-        </div>
-    </div> <!--slut effect -->
     </div>
-    </div>
-
-    </div>
-
-    </div>
-    </div> <!-- slut div anchor -->
 </main>
 
-
-<footer class="footer" id="anchor4">
-    <div class="container">
-    <div class="row">
-        <!--<p class="rubriker">Kontakt</p>-->
-        <div class="four columns">
-            <img src="images/github.png" alt="Github icon" id="github" onmouseover="this.src='images/github_color.png'" onmouseout="this.src='images/github.png'" class="hidden_mobile">
-            <br>
-            <p class="footerText">camillaborg.github.io</p>
+<footer>
+    <div class="footer-wrapper">
+        <div class="footer">
+                <div class="contact">
+                    <a href="mailto:camillaborg88@gmail.com"><img src="images/emailme.png" class="mail wow swing" data-wow-duration="10s" data-wow-iteration="50"></a>
+                    <!--<p><a href="mailto:camillaborg88@gmail.com">Maila mig nu!</a></p>-->
+                </div>
+                <div class="contact">
+                <img src="images/callme.png" class="phone">
+                <!--<p>(+46) 73 918 58 57</p>-->
+                </div>
         </div>
-        <div class="four columns">
-            <img src="images/phone.png" alt="Phone icon" id="phone" onmouseover="this.src='images/phone_color.png'" onmouseout="this.src='images/phone.png'" class="hidden_mobile">
-            <br>
-            <p class="footerText">(+46)73 918 58 57</p>
-        </div>
-        <div class="four columns">
-            <a href="mailto:camillaborg88@gmail.com"><img src="images/email.png" alt="Email icon" id="email" onmouseover="this.src='images/email_color.png'" onmouseout="this.src='images/email.png'" class="hidden_mobile"></a>
-            <br>
-            <p class="footerText">camillaborg88@gmail.com</p>
+        <div class="footer">
+            <a href="https://github.com/camillaborg" target="_blank"><img src="images/github-black.png" class="icons"></a>
+            <a href="https://www.linkedin.com/in/camilla-borg-83a800b1?authType=name&authToken=rt_i" target="_blank" ><img src="images/linkedin.png" class="icons"></a>
+            <a href="https://www.facebook.com/camilla.borg.79" target="_blank"><img src="images/facebook-icon-black.png" class="icons"></a>
         </div>
     </div>
-    </div>
-
+    <p class="copy">&copy; Camilla Borg 2016</p>
 </footer>
-
-    <script src="wow/wow.js" charset="utf-8"></script>
-    <script>
-        new WOW().init();
-    </script>
-    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="jquery.min.js" charset="utf-8"></script>
-    <script src="magic.js"></script>
-    <script>
-        jQuery(document).ready(function(){
-            jQuery('.skillbar').each(function(){
-                jQuery(this).find('.skillbar-bar').animate({
-                    width:jQuery(this).attr('data-percent')
-                },8000);
-            });
-        });
-
-    </script>
+<script src="wow/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="scripts/jquery.min.js" charset="utf-8"></script>
+<script src="scripts/script.js"></script>
 </body>
 </html>
