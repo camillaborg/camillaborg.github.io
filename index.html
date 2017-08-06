@@ -15,9 +15,9 @@
         <img src="images/menu_button.png" id="show-menu">
         <div class="menu">
             <ul>
-                <li>Om mig</li>
-                <li>Projekt</li>
-                <li>Kontakt</li>
+                <li><a href="#skills">Skills, CV, about me </a></li>
+                <li><a href="#first">Projekt</a></li>
+                <li><a href="#contact">Kontakt</a></li>
             </ul>
         </div>
     </nav>
@@ -42,7 +42,7 @@
             <li><img src="images/me-red.png" class="me-click wow rotateIn" data-wow-delay="0.5s"></li>
         </ul>
     </nav>
-    <div class="skills">
+    <div class="skills" id="skills">
         <!--<h5>Skills</h5>-->
         <ul>
             <li>HTML</li>
@@ -103,7 +103,7 @@
         </div>
     </div>
 
-    <div class="about-me">
+    <div class="about-me" id="about-me">
         <div class="section caption">
             <p><span>Ahaaa!</span> Du vill veta mer om mig, kul!<br>
                 Jag heter som sagt Camilla, är 26 år och bor strax utanför Stockholm.
@@ -135,23 +135,21 @@
 
     <div class="portfolio" id="first">
         <div class="item project-1">
-            <h3>Amado Agency</h3>
+            <h3>Svenska Friskhet</h3>
             <div class="block-over 1">
                 <span class="close">&#x2613</span>
-                <p>Utvecklat ett tema för Amado Agency i Wordpress.<br>Ville lära mig något nytt och pga detta har jag använt mig av ACF (Advanced Custom Fields) vilket var roligt och lätt att arbeta med. Även använt lite Flexbox för layout och positionering på sidan.
+                <p>Tillsammans med Emma Berglund byggde vi ett tema från grunden i Wordpress till företaget Svenska Friskhet. De ville ha en enkel hemsida där användaren kunde läsa om deras tjänster och skicka efter offert.
                 <ul>
                     <li>Wordpress</li>
-                    <li>ACF</li>
                     <li>jQuery</li>
                     <li>Flexbox</li>
                     <li>HTML & SASS</li>
-                    <li>Gulp</li>
                 </ul>
                 </p>
             </div>
             <div class="buttons">
                 <h4>Läs mer</h4>
-                <h4><a href="http://www.amadoagency.se" target="_blank">Besök</a></h4>
+                <h4><a href="http://www.svenskafriskhet.se" target="_blank">Besök</a></h4>
             </div>
         </div>
         <div class="item project-6">
@@ -252,7 +250,7 @@
 </main>
 
 <footer>
-    <div class="footer-wrapper">
+    <div class="footer-wrapper" id="contact">
         <div class="footer">
                 <div class="contact">
                     <a href="mailto:camillaborg88@gmail.com"><img src="images/emailme.png" class="mail wow swing" data-wow-duration="10s" data-wow-iteration="50"></a>
